@@ -38,14 +38,14 @@ public class Base {
 //		}
 		
 		if(fi.getCommonKeyValue("browser").equals("chrome")) {
-			
+			System.setProperty("webdriver.chrome.driver", "./Drivers\\chromedriver.exe");
 			
 			driver = new ChromeDriver();
 			staticDriver=driver;
 		}
 		else if(fi.getCommonKeyValue("browser").equals("firefox"))
 		{
-			
+			System.setProperty("webdriver.gecko.driver", "./Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			staticDriver=driver;
 		}
