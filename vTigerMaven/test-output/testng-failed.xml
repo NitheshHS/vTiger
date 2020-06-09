@@ -1,90 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" name="TestRunnerFirefox(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vTiger.testscripts.DeleteAllOrganizatioTest">
-        <methods>
-          <include name="configAm"/>
-          <include name="deleteOrg"/>
-          <include name="configBc"/>
-          <include name="configBM"/>
-          <include name="configAc"/>
-        </methods>
-      </class> <!-- com.vTiger.testscripts.DeleteAllOrganizatioTest -->
-      <class name="com.vTiger.testscripts.CreateProductTest">
-        <methods>
-          <include name="createproduct"/>
-          <include name="configAm"/>
-          <include name="configBc"/>
-          <include name="configBM"/>
-          <include name="configAc"/>
-        </methods>
-      </class> <!-- com.vTiger.testscripts.CreateProductTest -->
-      <class name="com.vTiger.testscripts.DeleteVendorTest">
-        <methods>
-          <include name="deletevendor"/>
-          <include name="configAm"/>
-          <include name="configBc"/>
-          <include name="configBM"/>
-          <include name="configAc"/>
-        </methods>
-      </class> <!-- com.vTiger.testscripts.DeleteVendorTest -->
-      <class name="com.vTiger.testscripts.DeleteAllContactTest">
-        <methods>
-          <include name="deleteAllContact"/>
-          <include name="configAm"/>
-          <include name="configBc"/>
-          <include name="configBM"/>
-          <include name="configAc"/>
-        </methods>
-      </class> <!-- com.vTiger.testscripts.DeleteAllContactTest -->
-      <class name="com.vTiger.testscripts.CreateContactTest">
-        <methods>
-          <include name="configAm"/>
-          <include name="configBc"/>
-          <include name="createContact"/>
-          <include name="configBM"/>
-          <include name="configAc"/>
-        </methods>
-      </class> <!-- com.vTiger.testscripts.CreateContactTest -->
       <class name="com.vTiger.testscripts.CreateOrganizationTest">
         <methods>
           <include name="configAm"/>
           <include name="configBc"/>
           <include name="configBM"/>
           <include name="configAc"/>
-          <include name="createOrganization"/>
+          <include name="createOrganization" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.vTiger.testscripts.CreateOrganizationTest -->
-      <class name="com.vTiger.testscripts.CreateLeadTest">
-        <methods>
-          <include name="createLead"/>
-          <include name="configAm"/>
-          <include name="configBc"/>
-          <include name="configBM"/>
-          <include name="configAc"/>
-        </methods>
-      </class> <!-- com.vTiger.testscripts.CreateLeadTest -->
-      <class name="com.vTiger.testscripts.CreateVendorTest">
-        <methods>
-          <include name="configAm"/>
-          <include name="configBc"/>
-          <include name="configBM"/>
-          <include name="createVendor"/>
-          <include name="configAc"/>
-        </methods>
-      </class> <!-- com.vTiger.testscripts.CreateVendorTest -->
-      <class name="com.vTiger.testscripts.DeleteLeadTest">
-        <methods>
-          <include name="deleteLead"/>
-          <include name="configAm"/>
-          <include name="configBc"/>
-          <include name="configBM"/>
-          <include name="configAc"/>
-        </methods>
-      </class> <!-- com.vTiger.testscripts.DeleteLeadTest -->
     </classes>
-  </test> <!-- TestRunnerFirefox(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

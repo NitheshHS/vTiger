@@ -29,8 +29,17 @@ public class Home {
 	@FindBy(xpath="//img[contains(@src,'user.PNG')]")
 	private WebElement userIcon;
 	
+	@FindBy(linkText="Opportunities")
+	private WebElement oppertunityLink;
+	
 	@FindBy(xpath="//a[.='Sign Out']")
 	private WebElement signoutLink;
+	
+	
+
+	public WebElement getOppertunityLink() {
+		return oppertunityLink;
+	}
 
 	public WebElement getLeadLink() {
 		return leadLink;
@@ -79,6 +88,10 @@ public class Home {
 	public void clickOnProducts()
 	{
 		productLink.click();
+	}
+	
+	public void clickOnOppertunity() {
+		oppertunityLink.click();
 	}
 	public void clickonMore(WebDriver driver)
 	{

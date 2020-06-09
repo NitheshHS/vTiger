@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vTiger.testscripts.DeleteLeadTest">
+      <class name="com.vTiger.testscripts.CreateOrganizationTest">
         <methods>
-          <include name="deleteLead"/>
           <include name="configAm"/>
           <include name="configBc"/>
           <include name="configBM"/>
           <include name="configAc"/>
+          <include name="createOrganization" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.vTiger.testscripts.DeleteLeadTest -->
+      </class> <!-- com.vTiger.testscripts.CreateOrganizationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
